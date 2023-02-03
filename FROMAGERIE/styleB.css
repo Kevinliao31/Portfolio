@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Parisienne";
+  src: url(./assets/Parisienne-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  background-color: black;
+  background-attachment: scroll;
+  background: url(./images/Accueil/marbre3.png) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Parisienne", sans-serif;
+  font-size: 25px;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  background-color: black;
+  justify-content: center;
+  border-bottom: 5px solid grey;
+  height: 65px;
+  
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu a {
+  display: block;
+  min-width: 160px;
+
+  margin: 0.5rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  position: relative;
+
+  transition: .5s;
+}
+
+.menu ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  transform: scale(1.05);
+}
+.logo {
+  position: absolute;
+  margin-right: 500px;
+  margin-top: auto;
+}
+.logo img {
+  max-width: 14.5%;
+  height: auto;
+}
+
+.Accueil {
+  margin-left: 5px;
+}
+
+.Accueil img {
+  max-width: 100%;
+  height: auto;
+}
+
+#BoutiqueAll{
+  font: 16px 'Montserrat', sans-serif;
+}
+
+/* Propriétés du titre Boutique */
+#Boutique {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 400%;
+  margin-bottom: 5%;
+}
+/* Propriétés du sous-titre de la Boutique */
+#BoutiqueSub {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 200%;
+  margin-bottom: 2%;
+}
+
+
+/* Propriétés du positionnement des images à gauche dans la boutique */
+#BoutiqueGauche {
+  max-width: 100%;
+  margin-top: 1%;
+  margin-right: 50%;
+  text-align: center;
+  font-size: 150%;
+  vertical-align: center;
+}
+/* Propriétés du positionnement des textes desciptifs à gauche dans la boutique */
+#BoutiqueGaucheText {
+  color: white;
+  max-width: 100%;
+  margin-right: 50%;
+  text-align: center;
+  font-size: 150%;
+  vertical-align: center;
+}
+
+/* Propriétés du positionnement des images à droite dans la boutique */
+#BoutiqueDroite {
+  max-width: 100%;
+  margin-top: -10%;
+  margin-left: 50%;
+  font-size: 150%;
+  text-align: center;
+}
+/* Propriétés du positionnement des textes desciptifs à droite dans la boutique */
+#BoutiqueDroiteText {
+  color: white;
+  max-width: 100%;
+  margin-left: 50%;
+  font-size: 150%;
+  text-align: center;
+}
+
+
+
+
+
+/* Propriétés des boutons de commande dans la boutique */
+#BoutiqueButton {
+  background-color: goldenrod;
+  color: black;
+  max-width: 100%;
+  font-size: 70%;
+  margin-top: 2%;
+  vertical-align: center;
+  border-color: gold;
+  border-radius: 15%;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#BoutiqueButton:hover{
+  transform: scale(1.05);
+
+}
+
+
+/* Propriétés des prix affichés dans la boutique */
+#BoutiquePrix {
+  font-size: xx-large;
+  color: white;
+}
+
+/* Propriétés des images affichées dans la boutique */
+#BoutiqueImages {
+  width: 35%;
+  height: auto;
+  margin-top: 5%;
+  border-radius: 5%;
+}
+
+
+/* Propriétés du groupement image + description de la section sélection du mois dans la boutique */
+.figure{
+ 
+  margin: auto;
+  flex-direction: row;
+  text-align: center;
+  display: flex;
+}
+
+/* Propriétés des images de la section sélection du mois dans la boutique */
+#SelecImages{
+  display: inline-block;
+  width: 50%;
+  
+}
+
+/* Propriétés des descriptions de la section sélection du mois dans la boutique */
+#SelecText{
+  color: white;
+  max-width: 100%;
+  font-size: 150%;
+  
+}
+
+
+
+
+
+/* Propriétés de la boite de la section sélection du mois dans la boutique */
+.Box1{
+
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: auto;
+  width: 90%;
+  text-align: center;
+  box-shadow: 10px 10px 10px  rgb(32, 32, 32);
+  border-radius: 5px;
+  margin-bottom: 5%;
+  
+  
+}
+
+/* Propriétés de la boite regroupant le reste des éléments de la boutique */
+.Box2{
+
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: auto;
+  width: 90%;
+  text-align: center;
+  box-shadow: 10px 10px 10px  rgb(32, 32, 32);
+  border-radius: 5px;
+  
+}

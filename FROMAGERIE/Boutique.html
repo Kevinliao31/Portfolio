@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La fromagerie Toulousaine</title>
+    <link rel="stylesheet" href="styleB.css" />
+  </head>
+
+  <body>
+    <nav>
+      <!-- Mise en place du logo sur la page -->
+      <div class="logo">
+        <a href="index.html"><img src="images\Accueil\accueil2.png" /></a>
+      </div>
+
+      <!-- Structuration du menu -->
+      <ul class="menu">
+        <li><a href="Produits.html">Nos produits</a></li>
+        <li><a href="Terroirs.html">Terroirs</a></li>
+        <li><a href="Qui_sommes_nous.html">Qui sommes nous ?</a></li>
+        <li><a href="Boutique.html">Boutique</a></li>
+        <li><a href="Connexion.html">Compte</a></li>
+      </ul>
+    </nav>
+
+
+
+      <!-- Structure de la page Boutique -->
+    <section id = BoutiqueAll>
+      <div>
+        <h1 id="Boutique"><u>Boutique</u></h1>
+      </div>
+
+      
+      <!-- Groupement de la sélection du mois structuré dans une boite -->
+      <div class="Box1">
+        <h5 id="BoutiqueSub">Notre sélection du mois</h5>
+
+
+        <!-- Insertion des produits da la sélection sous forme de "figure" -->
+        <div class="figure">
+        <figure>
+          <img id="SelecImages" src="images/boutique/groupe1/image1.png">
+          <figcaption>
+            <span id="SelecText"> Parmigiano Reggiano <br> | <br> 32 € Kg 
+            </span> <br>
+            <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+            />
+          </figcaption>
+        </figure>
+
+
+        <figure>
+          <img id ="SelecImages" src="images/boutique/groupe1/image2.png">
+          <figcaption>
+            <span id="SelecText"> Pavé Cendré <br> | <br> 28 € Kg 
+            </span> <br>
+            <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+            />
+          </figcaption>
+        </figure>
+       
+
+        <figure>
+          <img id ="SelecImages" src="images/boutique/groupe1/image3.png">
+          <figcaption>
+            <span id="SelecText"> Moliterno Al Tartufo <br> | <br> 55 . 6 € Kg
+            </span> <br>
+            <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+            />
+          </figcaption>
+        </figure>
+
+
+        <figure>
+          <img id ="SelecImages" src="images/boutique/groupe1/image4.png">
+          <figcaption>
+            <span id="SelecText"> Plateau De Fromage <br> | <br> 60 € Kg
+            </span> <br>
+            <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+            />
+          </figcaption>
+        </figure>
+        </div>
+
+
+      </div>
+
+
+
+   
+
+      <!-- Création de la seconde boite contenant le reste des articles -->
+      <div class="Box2">
+
+
+        <!-- Structuration de chaques articles dans des groupement de pragraphes alternés de droite à gauche jusqu'à la fin-->
+        <p id="BoutiqueGauche">
+          <img id="BoutiqueImages" src="images/boutique/groupe2/image1.jpg" />
+        </p>
+        <p id="BoutiqueGaucheText">
+          Le Charolais AOP
+          <span id="BoutiquePrix">&nbsp;&nbsp; | &nbsp;40€ Kg </span>
+        </p>
+        <p id="BoutiqueGaucheText">
+          <input
+          id="BoutiqueButton"
+          type="button"
+          onclick="location.href='Paiement.html';"
+          value="Commander"
+          />
+        </p>
+
+
+
+        <p id="BoutiqueDroite">
+          <img id="BoutiqueImages" src="images/boutique/groupe2/image2.jpg" />
+        </p>
+        <p id="BoutiqueDroiteText">
+          Fromage Pierre-Robert
+          <span id="BoutiquePrix">&nbsp;&nbsp; | &nbsp;42€ Kg </span>
+        </p>
+        <p id="BoutiqueDroiteText">
+          <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+          />
+        </p>
+
+
+
+        <p id="BoutiqueGauche">
+          <img id="BoutiqueImages" src="images/boutique/groupe2/image3.jpg" />
+        </p>
+        <p id="BoutiqueGaucheText">
+          Le Domanial <span id="BoutiquePrix">&nbsp;&nbsp; | &nbsp;38€ Kg </span>
+        </p>
+        <p id="BoutiqueGaucheText">
+          <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+          />
+        </p>
+
+
+
+        <p id="BoutiqueDroite">
+          <img id="BoutiqueImages" src="images/boutique/groupe2/image4.jpg" />
+        </p>
+        <p id="BoutiqueDroiteText">
+          Chartreux <span id="BoutiquePrix">&nbsp;&nbsp; | &nbsp;44€ Kg </span>
+        </p>
+        <p id="BoutiqueDroiteText">
+          <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+          />
+        </p>
+
+
+
+        <p id="BoutiqueGauche">
+          <img id="BoutiqueImages" src="images/boutique/groupe3/image1.jpg" />
+        </p>
+        <p id="BoutiqueGaucheText">
+          Tomme de Pur Brebis
+          <span id="BoutiquePrix">&nbsp;&nbsp; | &nbsp;50€ Kg </span>
+        </p>
+        <p id="BoutiqueGaucheText">
+          <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+          />
+        </p>
+
+
+
+        <p id="BoutiqueDroite">
+          <img id="BoutiqueImages" src="images/boutique/groupe3/image2.jpg" />
+        </p>
+        <p id="BoutiqueDroiteText">
+          Pecorino au Poivre AOP
+          <span id="BoutiquePrix">&nbsp;&nbsp; | &nbsp;22€ Kg </span>
+        </p>
+        <p id="BoutiqueDroiteText">
+          <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+          />
+        </p>
+
+
+
+        <p id="BoutiqueGauche">
+          <img id="BoutiqueImages" src="images/boutique/groupe3/image3.jpg" />
+        </p>
+        <p id="BoutiqueGaucheText">
+          Le Reblochon <span id="BoutiquePrix">&nbsp;&nbsp; | &nbsp;34€ Kg </span>
+        </p>
+        <p id="BoutiqueGaucheText">
+          <input
+            id="BoutiqueButton"
+            type="button"
+            onclick="location.href='Paiement.html';"
+            value="Commander"
+          />
+        </p>
+
+        
+      </div>
+
+
+
+
+
+      
+    </section>
+  </body>
+</html>

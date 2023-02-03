@@ -1,0 +1,152 @@
+/* Import de la police du site */
+@font-face {
+  font-family: "Parisienne";
+  src: url(./assets/Parisienne-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* paramètres de la balise html */
+html {
+  background-color: black;
+  background-attachment: scroll;
+  background: url(./images/Accueil/marbre3.png) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  margin-right: 500px;
+  margin-top: auto;
+}
+/* paramètres de la balise body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Parisienne", sans-serif;
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  background-color: black;
+  justify-content: center;
+  border-bottom: 5px solid grey;
+  height: 65px;
+}
+
+.menu li {
+  list-style-type: none;
+}
+/* Configuration des liens du menu. Texte aligné au centre des cases. Cases de couleur noires avec police blanche*/
+.menu a {
+  display: block;
+  min-width: 160px;
+
+  margin: 0.5rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: .5s;
+}
+
+.menu ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Permet de souligner en blanc lorsque la souris passe sur les blocs du menu */
+.menu a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  transform: scale(1.05);
+}
+/* Configuration du logo */
+.logo {
+  position: absolute;
+  margin-right: 500px;
+  margin-top: auto;
+}
+.logo img {
+  max-width: 14.5%;
+  height: auto;
+}
+
+.Accueil {
+  margin-left: 5px;
+}
+
+.Accueil img {
+  max-width: 100%;
+  height: auto;
+}
+
+#QSN {
+  font: 18px 'Montserrat', sans-serif;
+}
+/* Taille et positionnement de l'image "Equipe" */
+#Equipe {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2%;
+  border-radius: 12%;
+}
+/* positionnement des images */
+.images {
+  padding-top: 2%;
+  margin-left: 4.4%;
+}
+
+.prénom {
+  color: black;
+  position: relative;
+  margin-left: 10%;
+  font-size: large;
+}
+/* Taille et positionnement des images de chaque personne de l'équipe */
+#Léa {
+  width: 10%;
+  margin-left: 9%;
+  border-radius: 12px;
+}
+
+#Hussen {
+  width: 8%;
+  margin-left: 9%;
+  border-radius: 12px;
+}
+
+#Sabah {
+  width: 9%;
+  margin-left: 9%;
+  border-radius: 12px;
+}
+
+#Farah {
+  width: 9%;
+  margin-left: 9%;
+  border-radius: 12px;
+}
+/* gère le bloc description  */
+.description {
+  color: black;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3%;
+  font: 20px 'Montserrat', sans-serif;
+}
+
+.row{
+  flex-direction: row;
+  display: flex;
+}

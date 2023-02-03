@@ -1,0 +1,198 @@
+/* Import de la police du site */
+@font-face {
+  font-family: "Parisienne";
+  src: url(./assets/Parisienne-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* paramètres de la balise html */
+html {
+  overflow-x: hidden;
+  background-color: black;
+  background-attachment: scroll;
+  background: url(./images/Accueil/marbre3.png) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* paramètres de la balise body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Parisienne", sans-serif;
+  font-size: 25px;
+}
+/* paramètres du menu */
+.menu {
+  display: flex;
+  padding: 0;
+  background-color: black;
+  justify-content: center;
+  border-bottom: 5px solid grey;
+  height: 65px;
+}
+
+.menu li {
+  list-style-type: none;
+}
+/* Configuration des liens du menu. Texte aligné au centre des cases. Cases de couleur noires avec police blanche*/
+.menu a {
+  display: block;
+  min-width: 160px;
+
+  margin: 0.5rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: .5s;
+}
+
+.menu ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Permet de souligner en blanc lorsque la souris passe sur les blocs du menu */
+.menu a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  transform: scale(1.05);
+}
+/* Configuration du logo */
+.logo {
+  position: absolute;
+  margin-right: 500px;
+  margin-top: auto;
+}
+
+.logo img {
+  max-width: 14.5%;
+  height: auto;
+}
+
+.logo a:hover {
+  color: white;
+}
+.Accueil {
+  margin-left: 5px;
+}
+
+.Accueil img {
+  max-width: 100%;
+  height: auto;
+}
+
+#fromagerie {
+  margin-top: 1%;
+  max-width: 100%;
+  margin-left: 27%;
+  z-index: 1;
+  width: 50%;
+}
+#logo {
+  max-width: 30%;
+  margin-left: 9%;
+  margin-top: 5%;
+  width: 50%;
+}
+#fromage {
+  max-width: 100%;
+  margin-top: 5%;
+  margin-left: 20%;
+  z-index: 2;
+  width: 40%;
+}
+#slogan {
+  transform: rotate(-10deg);
+  max-width: 35%;
+  margin-left: 63%;
+  z-index: 3;
+  width: 50%;
+}
+
+#magasin {
+  margin-top: 10%;
+  background: url(./images/Accueil/magasin.jpg);
+  background-size: cover;
+  width: 100%;
+  width: 100%;
+}
+
+/* configuration de tous les éléments de accueil2 */
+.Accueil2 {
+  height: 100%;
+  position: relative;
+  color: black;
+  text-align: center;
+}
+.titre_local {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.contenu_local {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+
+}
+.titre_contact {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 70%;
+  left: 22%;
+
+}
+.contenu_contact {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 78%;
+  left: 16%;
+
+}
+.titre_Offre {
+  font-size: 50px;
+  position: absolute;
+  top: 33%;
+  left: 70%;
+
+}
+.Borne{
+	width: 30%;
+	font-size: 35px;
+	position: absolute;
+	top:40%;
+	left:66%;
+
+}
+.contenu_offre {
+  font-size: 25px;
+  position: absolute;
+  top: 48%;
+  left: 70%;
+}
+.titre_Engagement {
+  font-size: 50px;
+  position: absolute;
+  top: 65%;
+  left: 73%;
+  
+}
+.contenu_engagement {
+  font-size: 25px;
+  position: absolute;
+  top: 70%;
+  left: 73%;
+  
+}

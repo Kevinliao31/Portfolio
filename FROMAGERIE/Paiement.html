@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La fromagerie Toulousaine</title>
+    <link rel="stylesheet" href="stylePayCom.css" />
+  </head>
+
+  <body>
+    <nav>
+      <!-- Mise en place du logo sur la page -->
+      <div class="logo">
+        <a href="index.html"><img src="images\Accueil\accueil2.png" /></a>
+      </div>
+
+
+
+      <!-- Structuration du menu -->
+      <ul class="menu">
+        <li><a href="Produits.html">Nos produits</a></li>
+        <li><a href="Terroirs.html">Terroirs</a></li>
+        <li><a href="Qui_sommes_nous.html">Qui sommes nous ?</a></li>
+        <li><a href="Boutique.html">Boutique</a></li>
+        <li><a href="Connexion.html">Compte</a></li>
+      </ul>
+    </nav>
+
+
+
+      <!-- Structure de la page Boutique -->
+    <section>
+      <div>
+        <h1 id="Paiement"><u>Régler votre commande</u></h1>
+      </div>
+
+      
+      <!-- Debut de la strucure mise en place de la boite conteneuse -->
+      <div class="Box1">
+        <h5 id="PaiementSub">Veuillez rentrer vos informations</h5>
+
+
+        <!-- Table avec la demande des informations nécessaire à la prise de commande -->
+        <form action="" method ="POST" enctype="text/plain">
+     
+          <table id="FormText"> 
+          
+              <tr><td>Civilité</td>  <td>
+                  <input type="radio" name="civilite" value="madame"> Madame
+                  <input type="radio" name="civilite" value="monsieur"> Monsieur
+                  
+              </td></tr>
+              
+  
+  
+              <tr><td>Nom / Prénom</td><td>
+                  <input type="text" name="nom">
+              </td></tr>
+
+              <tr><td>Type de Carte</td>  <td>
+                <input type="radio" name="typec" value="visa"> Visa
+                <input type="radio" name="typec" value="mastercard"> Mastercard
+              </td></tr>
+
+
+              <tr><td>Numéro de carte</td><td>
+                <input type="number" name="carte">
+              </td></tr>
+
+              <tr><td>Numéro CVV</td><td>
+                <input type="number" name="cvv">
+              </td></tr>
+  
+  
+              <tr><td>Adresse</td><td>
+                  <textarea name="adresse"></textarea>
+              </td></tr>
+  
+  
+              <tr><td>N°postal / Localité</td><td>
+                  <input type="text" name="postal" maxlength="5" pattern="[0-9]{5}">
+              
+                  <input type="text" name="ville" value="Toulouse">
+              </td></tr>
+  
+  
+              <tr><td>Pays</td><td>
+                  <select name="pays">
+  
+                      <option>France</option>
+                      <option>Belgique</option>
+                      <option>Luxembourg</option>
+                      <option>Suisse</option>
+                      <option>Monaco</option>
+  
+  
+                  </select>
+              </td></tr>
+  
+              <tr><td>Quelle type de livraison ?</td><td>
+                  <select name="livraison">
+  
+                      <option>Retrait en magasin</option>
+                      <option>Livraison à domicile</option>
+                      <option>Retrait en point relais</option>
+  
+  
+                  </select>
+              </td></tr>
+
+
+
+
+  
+              
+  
+  
+  
+          
+  
+          
+          
+          </table>
+
+          
+
+      </form>
+
+      <!-- Bouton pour passer la commande -->
+      <input
+            id="Valider"
+            type="button"
+            onclick="location.href='Connexion.html';"
+            value="Passer commande"
+            />
+
+      </div>
+      
+
+
+
+   
+
+ 
+    </section>
+  </body>
+</html>

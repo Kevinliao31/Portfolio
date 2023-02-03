@@ -1,0 +1,142 @@
+/* Import de la police du site */
+@font-face {
+  font-family: "Parisienne";
+  src: url(./assets/Parisienne-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* paramètres de la balise html */
+html {
+  background-color: black;
+  background-attachment: scroll;
+  background: url(./images/Accueil/marbre3.png) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* paramètres de la balise body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Parisienne", sans-serif;
+  font-size: 25px;
+}
+/* paramètres du menu */
+.menu {
+  display: flex;
+  padding: 0;
+  background-color: black;
+  justify-content: center;
+  border-bottom: 5px solid grey;
+  height: 65px;
+}
+
+.menu li {
+  list-style-type: none;
+}
+/* Configuration des liens du menu. Texte aligné au centre des cases. Cases de couleur noires avec police blanche*/
+.menu a {
+  display: block;
+  min-width: 160px;
+
+  margin: 0.5rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: .5s;
+}
+
+.menu ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Permet de souligner en blanc lorsque la souris passe sur les blocs du menu */
+.menu a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  transform: scale(1.05);
+}
+/* Configuration du logo */
+.logo {
+  position: absolute;
+  margin-right: 500px;
+  margin-top: auto;
+}
+.logo img {
+  max-width: 14.5%;
+  height: auto;
+}
+/* configuration de la classe terroirs. Positionnement et images*/
+.Terroirs {
+  margin: 5% 10%;
+}
+
+.Terroirs img {
+  display: block;
+  max-width: 40%;
+}
+
+#row{
+  display: flex;
+  flex-direction: row;
+}
+
+#Haute_Garonne {
+  font: 20px 'Montserrat', sans-serif;
+  background-color: #e5ded8;
+  border-radius: 10px;
+  color: black;
+  
+  padding: 3%;
+  margin-top: 3%;
+}
+
+#Haute_Garonne img{
+  text-align: left;
+}
+
+p {
+  margin-left: 10px;;
+}
+
+#Ariege {
+  background-color: #e5ded8;
+  border-radius: 10px;
+  color: black;
+  font: 20px 'Montserrat', sans-serif;
+  padding: 3%;
+  margin-top: 3%;
+}
+
+#Ariege img {
+  width: auto;
+}
+
+
+#Tarn {
+  background-color: #e5ded8;
+  border-radius: 10px;
+  color: black;
+  font: 20px 'Montserrat', sans-serif;
+  margin-top: 3%;
+  padding: 3%;
+}
+
+#Tarn img {
+  width: 50%;
+}
+
+/* permet de mettre un élément à gauche */
+.align_left {
+  float: left;
+}
+/* permet de mettre un élément à gauche */
+.align_right {
+  float: right;
+}
